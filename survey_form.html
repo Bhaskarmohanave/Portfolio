@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form_styles.css">
+    <title>Service Feedback</title>
+  </head>
+
+  <body>
+    <div>
+      <h1 id="title">Service Feedback</h1>
+      <p id="description">Provide your feedback to improve our service quality.</p>
+
+      <form id="survey-form">
+
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Enter Your Details</legend>
+
+          <label id="name-label" for="name">First Name:
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </label>
+
+          <label id="email-label" for="email">Email:
+            <input id="email" type="email" placeholder="Enter your email" required>
+          </label>
+
+          <label id="number-label" for="number">Mobile Number:
+            <input id="number" type="number" placeholder="Enter mobile number" min="10" max="15" required>
+          </label>
+        </fieldset>
+
+        <!-- Service Details -->
+        <fieldset>
+          <legend>Provide Service Details</legend>
+
+          <label for="date">Service Date:
+            <input id="date" type="date" required>
+          </label>
+
+          <label for="jobcard">Jobcard Number:
+            <input id="jobcard" type="text" placeholder="Enter jobcard number" required>
+          </label>
+
+          <label id="dropdown-label" for="dropdown">Service Type:
+            <select id="dropdown" required>
+              <option value="">Select service type</option>
+              <option value="free1">Free Service - 1</option>
+              <option value="free2">Free Service - 2</option>
+              <option value="free3">Free Service - 3</option>
+              <option value="paid">Paid</option>
+              <option value="amc">AMC</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- Feedback Section -->
+        <fieldset>
+          <legend>Service Remarks</legend>
+
+          <!-- Advisor Behavior -->
+          <label id="name-label">Advisor Behavior:</label>
+          <div id="advisor">
+            <label class="AB">
+              <input class="AB" type="radio" name="behavior" value="poor" required> Poor
+            </label>
+            <label class="AB">
+              <input class="AB" type="radio" name="behavior" value="fair" required> Fair
+            </label>
+            <label class="AB">
+              <input class="AB" type="radio" name="behavior" value="good" required> Good
+            </label>
+            <label class="AB">
+              <input class="AB" type="radio" name="behavior" value="excellent" required> Excellent
+            </label>
+          </div>
+
+          <!-- Service Satisfaction Checkboxes -->
+          <label for="checkbox-group">How satisfied were you with the service? (Check all that apply)</label>
+          <div id="checkbox-group">
+            <label>
+              <input type="checkbox" name="satisfaction" value="timeliness"> Timeliness
+            </label>
+            <label>
+              <input type="checkbox" name="satisfaction" value="quality"> Quality of service
+            </label>
+            <label>
+              <input type="checkbox" name="satisfaction" value="communication"> Communication
+            </label>
+          </div>
+
+          <!-- Comments -->
+          <label for="comments">Comments:
+            <textarea id="comments" placeholder="Enter additional feedback" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

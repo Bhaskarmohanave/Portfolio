@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    background-color: #2C3E50; /* Dark Blue */
+    font-family: Arial, sans-serif;
+    color: #ECF0F1; /* Light Grayish Blue */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styles */
+  div {
+    background-color: #34495E; /* Medium Blue-Gray */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title and Description */
+  #title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  
+  /* Form and Fieldset Styles */
+  form {
+    padding: 10px;
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ECF0F1;
+    margin-bottom: 10px;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #BDC3C7; /* Light Gray */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ECF0F1; /* Light Grayish Blue */
+    color: #2C3E50; /* Dark Blue */
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  label.AB {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  #advisor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Buttons */
+  button#submit {
+    background-color: #1ABC9C; /* Greenish Blue */
+    color: #FFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#submit:hover {
+    background-color: #16A085; /* Darker Greenish Blue */
+  }
+  
+  /* Checkbox Group */
+  #checkbox-group {
+    margin-top: 10px;
+  }
+  
+  #checkbox-group label {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    div {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    #advisor {
+      flex-direction: column;
+    }
+  
+    button#submit {
+      width: 100%;
+    }
+  }
+  
